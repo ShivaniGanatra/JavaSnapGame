@@ -1,10 +1,14 @@
 package src;
 
+import java.util.Comparator;
+
+//Card class
 public class Card {
      String suit;
     int value;
     String symbol;
 
+    //constructor
     public Card(String suit, int value, String symbol) {
         this.suit = suit;
         this.value = value;
@@ -35,6 +39,18 @@ public class Card {
         this.symbol = symbol;
     }
 
+    public static Comparator<Card> CardValueNumber = new Comparator<Card>() {
+        @Override
+        public int compare(Card o1, Card o2) {
+            int cardNumberOne = o1.getValue();
+            int cardNumberTwo = o2.getValue();
+            return cardNumberOne-cardNumberTwo;
+        }
+    };
+
+
+
+    @Override
     public String toString() {
         return "[The card suit is a " + this.suit + " has the symbol " + this.symbol + " and has a value of " + this.value + "]" +"\n";
     }
