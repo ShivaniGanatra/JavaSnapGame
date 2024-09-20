@@ -6,29 +6,32 @@ import java.util.ArrayList;
 
 public class CardUtils {
 
-    //have static method that uses increment to increment card values
-    private static int value = 0;
-    static ArrayList<String> values = new ArrayList<>();
+    //have static method that uses increment to increment card symbols
 
-    public static int nextValue() {return ++value;}
+    static ArrayList<String> symbols = new ArrayList<>();
+
     static {
-        values.add("2");
-        values.add("3");
-        values.add("4");
-        values.add("5");
-        values.add("6");
-        values.add("7");
-        values.add("8");
-        values.add("9");
-        values.add("10");
-        values.add("J");
-        values.add("Q");
-        values.add("K");
-        values.add("A");
+        symbols.add("2");
+        symbols.add("3");
+        symbols.add("4");
+        symbols.add("5");
+        symbols.add("6");
+        symbols.add("7");
+        symbols.add("8");
+        symbols.add("9");
+        symbols.add("10");
+        symbols.add("J");
+        symbols.add("Q");
+        symbols.add("K");
+        symbols.add("A");
     }
 
+
+static int [] values ={1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+    
+
     public static void main(String[] args) {
-        System.out.println(values);
+        System.out.println(symbols);
     }
 }
 

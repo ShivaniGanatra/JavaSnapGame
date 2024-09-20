@@ -36,7 +36,7 @@ public class Card {
     }
 
     public String toString() {
-        return "The card is a " + this.suit + " has the symbol " + this.symbol + " and had a value of " + this.value;
+        return "[The card suit is a " + this.suit + " has the symbol " + this.symbol + " and has a value of " + this.value + "]" +"\n";
     }
 
 
