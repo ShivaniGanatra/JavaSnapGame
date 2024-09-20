@@ -1,5 +1,7 @@
+package src;
+
 public class Card {
-    String suit;
+     String suit;
     int value;
     String symbol;
 
@@ -34,8 +36,12 @@ public class Card {
     }
 
     public String toString() {
-        return "The card is a" + this.suit + "has the symbol" + this.symbol + "and had a value of" + this.value;
+        return "The card is a " + this.suit + " has the symbol " + this.symbol + " and had a value of " + this.value;
     }
+
+
+
+
 
 
 
