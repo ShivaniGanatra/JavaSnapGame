@@ -10,6 +10,10 @@ public class Main {
         System.out.println(deckOfCards);
         System.out.println("The first card is " + cardgame.dealCard(deckOfCards));
         System.out.println("Shuffled deck is " + cardgame.shuffleDeck(deckOfCards));
+        System.out.println("Shuffle again" + cardgame.shuffleDeck(deckOfCards));
         System.out.println(deckOfCards);
+
+        //System.out.println("sort deck into numbers " + cardgame.sortDeckInNumberOrder(deckOfCards));
+        //System.out.println("sort deck in suits " + cardgame.sortDeckInSuits(deckOfCards));
     }
 }
