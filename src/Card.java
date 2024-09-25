@@ -4,9 +4,9 @@ import java.util.Comparator;
 
 //Card class
 public class Card {
-     String suit;
-    int value;
-    String symbol;
+    private String suit;
+    private int value;
+    private String symbol;
 
     //constructor
     public Card(String suit, int value, String symbol) {
