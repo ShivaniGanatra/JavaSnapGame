@@ -19,24 +19,12 @@ public class Card {
         return suit;
     }
 
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
-
     public int getValue() {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public String getSymbol() {
         return symbol;
-    }
-
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
     }
 
     public static Comparator<Card> CardValueNumber = new Comparator<Card>() {
@@ -47,31 +35,6 @@ public class Card {
             return cardNumberOne-cardNumberTwo;
         }
     };
-
-//    public static Comparator<Card> CardSuits = new Comparator<Card>() {
-//
-//        public int compare(Card o1, Card o2) {
-//            int cardNumberOne = Integer.parseInt(o1.getSuit());int cardNumberTwo = Integer.parseInt(o2.getSuit());
-//
-//            return cardNumberOne-cardNumberTwo;
-//        }
-//    };
-
-//    public static Comparator<Card> CardSuits = new Comparator<Card>() {
-//        @Override
-//        public int compare(Card o1, Card o2) {
-//            int cardNumberOne = o1.getValue();
-//            int cardNumberTwo = o2.getValue();
-//            return cardNumberOne-cardNumberTwo;
-//        }
-//    };
-
-//    public static Comparator<Person> createPersonLambdaComparator() {
-//        return Comparator.comparing(Person::getName)
-//                .thenComparing(Person::getAge);
-//    }
-
-
 
     @Override
     public String toString() {
