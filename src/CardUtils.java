@@ -1,13 +1,8 @@
 package src;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.ArrayList;
 
 public class CardUtils {
-
-    //have static method that uses increment to increment card symbols
-
     static ArrayList<String> symbols = new ArrayList<>();
 
     static {
@@ -26,9 +21,7 @@ public class CardUtils {
         symbols.add("A");
     }
 
-
 static int [] values ={1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-    
 
     public static void main(String[] args) {
         System.out.println(symbols);

@@ -4,30 +4,30 @@ import java.util.Comparator;
 
 //Card class
 public class Card {
-    private String suit;
-    private int value;
-    private String symbol;
+    private final String SUIT;
+    private final int VALUE;
+    private final String SYMBOL;
 
     //constructor
     public Card(String suit, int value, String symbol) {
-        this.suit = suit;
-        this.value = value;
-        this.symbol = symbol;
+        this.SUIT = suit;
+        this.VALUE = value;
+        this.SYMBOL = symbol;
     }
 
     public String getSuit() {
-        return suit;
+        return SUIT;
     }
 
     public int getValue() {
-        return value;
+        return VALUE;
     }
 
     public String getSymbol() {
-        return symbol;
+        return SYMBOL;
     }
 
-    public static Comparator<Card> CardValueNumber = new Comparator<Card>() {
+    public static Comparator<Card> CardValueNumber = new Comparator<>() {
         @Override
         public int compare(Card o1, Card o2) {
             int cardNumberOne = o1.getValue();
@@ -38,7 +38,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "[The card suit is a " + this.suit + " has the symbol " + this.symbol + " and has a value of " + this.value + "]" +"\n";
+        return "[The card suit is a " + this.SUIT + " has the symbol " + this.SYMBOL + " and has a value of " + this.VALUE + "]" +"\n";
     }
 
 

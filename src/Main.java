@@ -1,60 +1,29 @@
 package src;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-//        Scanner s = new Scanner(System.in);
-//
-     Snap snap = new Snap();
-//        ArrayList<Card> AllCards = snap.getDeckOfCards();
-//
-//
-//        Card card = snap.dealCard(AllCards);
-//        System.out.println("card to remove is " + card);
-//
-//        ArrayList<Card> filteredCards = snap.filterRemovedCardFromDeck(AllCards, card);
-//        System.out.println(filteredCards + " " + filteredCards.size());
-//
-//        card = snap.dealCard(filteredCards);
-//        System.out.println("card to remove is " + card);
-//
-//        filteredCards = snap.filterRemovedCardFromDeck(filteredCards, card);
-//        System.out.println(filteredCards + " " + filteredCards.size());
-//
-//
-//        System.out.println(snap.checkSnap(card, filteredCards.getLast()));
+        Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Hi please can you enter your name");
+        System.out.println();
+        String userName1 = scanner.nextLine();  // Read user input
+        Player player1 = new Player(1,"default");
+        player1.setName(userName1);
+        System.out.println("Hi " + player1.getName() + " you are player" + player1.getNumber());
+
+        System.out.println("Hi player 2 please can you enter your name");
+        System.out.println();
+        String userName2 = scanner.nextLine();  // Read user input
+        Player player2 = new Player(2,"default");
+        player2.setName(userName2);
+        System.out.println("Hi " + player2.getName() + " you are player" + player2.getNumber());
 
 
+
+
+/**/     Snap snap = new Snap();
         snap.playSnap();
-        //Scanner scanner = new Scanner(System.in);
-
-//        String readString = scanner.nextLine();
-//        while(readString!=null) {
-//            System.out.println(readString);
-//
-//            if (readString.isEmpty()) {
-//                System.out.println("Read Enter Key.");
-//            }
-//
-//            if (scanner.hasNextLine())
-//            {
-//                readString = scanner.nextLine();
-//            } else {
-//                readString = null;
-//            }
-//        }
-
-
-
-        //snap.filterRemovedCardFromDeck(cards,);
-
-
-//        System.out.println("Press Enter");
-//        s.nextLine();
-//        System.out.println("Thank you");
-
     }
 }
