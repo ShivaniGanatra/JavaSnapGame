@@ -22,8 +22,10 @@ public class Snap extends CardGame {
             System.out.println(card);
             cards.remove(card);
             separateCards.add(card);
+            int intToTrack = separateCards.size();
+            oddOrEven.add(intToTrack);
 
-            if(separateCards.size()>2 && card.getValue() == separateCards.get(separateCards.size()-2).getValue()){
+            if(oddOrEven.size() > 1 && card.getValue() == separateCards.get(separateCards.size()-2).getValue()){
                 System.out.println("theres a match you've wom");
                 break;
             } else{

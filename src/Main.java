@@ -20,7 +20,6 @@ public class Main {
                 System.out.println( "You've taken too long to answer correctly so the original winner remains" );
                 System.exit( 0 );
             }
-
         }
     };
 
@@ -42,34 +41,34 @@ public class Main {
 
     }
     public static void main(String[] args) {
-
-//        Scanner scanner = new Scanner(System.in);  // Create a Scanner object
-//        System.out.println("Hi please can you enter your name");
-//        System.out.println();
-//        String userName1 = scanner.nextLine();  // Read user input
-//        Player player1 = new Player(1,"default");
-//        player1.setName(userName1);
-//        System.out.println("Hi " + player1.getName() + " you are player" + player1.getNumber());
-//
-//        System.out.println("Hi player 2 please can you enter your name");
-//        System.out.println();
-//        String userName2 = scanner.nextLine();  // Read user input
-//        Player player2 = new Player(2,"default");
-//        player2.setName(userName2);
-//        System.out.println("Hi " + player2.getName() + " you are player" + player2.getNumber());
-
 /**/     Snap snap = new Snap();
-
-
-
 
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Hi if you wanna play one player enter 1 for two players enter 2");
         System.out.println();
         int number = Integer.parseInt(scanner.nextLine());  // Read user input
         if(number == 1){
+            System.out.println("You've selected one player");
             snap.playOnePlayerSnap();
+
+
         } else if(number == 2) {
+            System.out.println("You've selected two player");
+            System.out.println("Hi please can you enter your name");
+        System.out.println();
+        String userName1 = scanner.nextLine();  // Read user input
+        Player player1 = new Player(1,"default");
+        player1.setName(userName1);
+        System.out.println("Hi " + player1.getName() + " you are player" + player1.getNumber());
+
+        System.out.println("Hi player 2 please can you enter your name");
+        System.out.println();
+        String userName2 = scanner.nextLine();  // Read user input
+        Player player2 = new Player(2,"default");
+        player2.setName(userName2);
+        System.out.println("Hi " + player2.getName() + " you are player" + player2.getNumber());
+
+
             String result = snap.playTwoPlayersSnap();
             String oppositeSnapWinner;
 
@@ -91,12 +90,6 @@ public class Main {
         }   else {
             System.out.println("You have to input 1 or 2");
         }
-
-
-        //snap.playTwoPlayersSnap();
-        //System.out.println(snap.playTwoPlayersSnap());
-
-
         System.out.println( "main exit..." );
 
     }
