@@ -7,8 +7,7 @@ public class Snap extends CardGame {
     Scanner scanner = new Scanner(System.in);
     ArrayList<Card> cards = snap.getDeckOfCards();
     ArrayList<Card> separateCards = new ArrayList<>();
-
-
+    ArrayList<Integer> oddOrEven = new ArrayList<>();
 
     public void playOnePlayerSnap() {
         System.out.println("Press Enter");
@@ -43,13 +42,13 @@ public class Snap extends CardGame {
         }
     }
 
-    public void playTwoPlayersSnap() {
-        System.out.println("Hi player 1 click enter to deal a card");
+    public String playTwoPlayersSnap() {
+        System.out.println("Hi Player One click enter to deal a card");
         snap.shuffleDeck(cards);
         Card card = snap.dealCard(cards);
         cards.remove(card);
         String readString = scanner.nextLine();
-        ArrayList<Integer> oddOrEven = new ArrayList<>();
+
 
         while(readString!=null) {
             System.out.println(readString);
@@ -68,9 +67,9 @@ public class Snap extends CardGame {
             if(oddOrEven.size() > 1 && card.getValue() == separateCards.get(separateCards.size()-2).getValue()){
 
                 if(oddOrEven.getLast() %2 == 0){
-                    System.out.println("player 2 theres a match you've won");
+                    System.out.println("player Two theres a match you've won but ...");
                 } else {
-                    System.out.println("player 1 theres a match you've won");
+                    System.out.println("Player One theres a match you've won but ...");
                 }
                 break;
             } else {
@@ -91,7 +90,9 @@ public class Snap extends CardGame {
                 readString = null;
             }
         }
+        if(oddOrEven.getLast() % 2 == 0){
+            return "Player Two won";
+        } return "Player One won";
+
     }
-
-
 }
