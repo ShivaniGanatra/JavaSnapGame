@@ -40,9 +40,8 @@ public class CardGame {
         return cards.getFirst();
     }
 
-    public List<Card> shuffleDeck(ArrayList<Card> cards) {
+    public void shuffleDeck(ArrayList<Card> cards) {
         shuffle(cards);
-        return cards;
     }
 
     public ArrayList<Card> sortDeckInNumberOrder(ArrayList<Card> cards) {

@@ -10,9 +10,7 @@ import java.util.TimerTask;
 public class Main {
 
     private String str = "";
-
-    TimerTask task = new TimerTask()
-    {
+    TimerTask task = new TimerTask() {
         public void run()
         {
             if(str.isEmpty())
@@ -26,7 +24,7 @@ public class Main {
     public void getInput(String player, String playerName) throws Exception
     {
         Timer timer = new Timer();
-        timer.schedule( task, 5*1000 );
+        timer.schedule( task, 5000 );
 
         System.out.println( player + " aka " + playerName +" you can still type snap or SNAP in five seconds to win: " );
         BufferedReader in = new BufferedReader(
@@ -41,12 +39,8 @@ public class Main {
 
     }
     public static void main(String[] args) {
-        /**/
         Snap snap = new Snap();
-
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object
-
-
         int number = 0;
         try {
             System.out.println("Hi if you wanna play one player enter 1 for two players enter 2");

@@ -26,7 +26,7 @@ public class Snap extends CardGame {
             oddOrEven.add(intToTrack);
 
             if(oddOrEven.size() > 1 && card.getValue() == separateCards.get(separateCards.size()-2).getValue()){
-                System.out.println("theres a match you've wom");
+                System.out.println("Theres a match you've won!!!");
                 break;
             } else{
                 System.out.println("no match yet");
@@ -69,7 +69,7 @@ public class Snap extends CardGame {
             if(oddOrEven.size() > 1 && card.getValue() == separateCards.get(separateCards.size()-2).getValue()){
 
                 if(oddOrEven.getLast() %2 == 0){
-                    System.out.println("player Two theres a match you've won but ...");
+                    System.out.println("Player Two theres a match you've won but ...");
                 } else {
                     System.out.println("Player One theres a match you've won but ...");
                 }
