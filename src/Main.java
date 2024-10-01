@@ -28,14 +28,14 @@ public class Main {
         Timer timer = new Timer();
         timer.schedule( task, 5*1000 );
 
-        System.out.println( player + "aka" + playerName +" you can still type snap or SNAP in five seconds to win: " );
+        System.out.println( player + " aka " + playerName +" you can still type snap or SNAP in five seconds to win: " );
         BufferedReader in = new BufferedReader(
                 new InputStreamReader( System.in ) );
         str = in.readLine();
         if(Objects.equals(str, "snap") || Objects.equals(str, "SNAP")){
-            System.out.println(player + "aka" + playerName + " you were quick with it, you're now the winner");
+            System.out.println(player + " aka " + playerName + " you were quick with it, you're now the winner");
         } else {
-            System.out.println( "Unfortunately " + player + "aka" + playerName + " you haven't entered the correct string");
+            System.out.println( "Unfortunately " + player + " aka " + playerName + " you haven't entered the correct string");
         }
         timer.cancel();
 
