@@ -41,26 +41,4 @@ public class Card {
         return "[The card suit is a " + this.SUIT + " has the symbol " + this.SYMBOL + " and has a value of " + this.VALUE + "]" +"\n";
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
